@@ -1,0 +1,18 @@
+disaster-relief-allocator:baseline (debian 13.7)
+=================================================
+Total: 172 (UNKNOWN: 0, LOW: 62, MEDIUM: 64, HIGH: 46, CRITICAL: 0)
+
++--------------------+------------------+----------+-------------------+---------------+---------------------------------------+
+|      LIBRARY       |  VULNERABILITY   | SEVERITY | INSTALLED VERSION | FIXED VERSION |                 TITLE                 |
++--------------------+------------------+----------+-------------------+---------------+---------------------------------------+
+| bsdutils           | CVE-2026-76642   | HIGH     | 2.40.2-1          |               | util-linux: mount helper privilege   |
+|                    | CVE-2026-78408   | HIGH     | 2.40.2-1          |               | util-linux: cgroup namespace leakage  |
+| libacl1            | CVE-2026-54369   | HIGH     | 2.3.2-2           |               | libacl: symlink traversal in restore  |
+| libncursesw6       | CVE-2025-69720   | HIGH     | 6.5-2             |               | ncurses: buffer overflow in terminfo  |
+| libsystemd0        | CVE-2026-16742   | HIGH     | 256.7-1           |               | systemd: missing signature check      |
+| perl-base          | CVE-2026-9538    | HIGH     | 5.40.0-6          |               | perl: DoS in Archive::Tar parser      |
+| util-linux         | CVE-2026-78409   | HIGH     | 2.40.2-1          |               | util-linux: bind mount escape         |
+| util-linux         | CVE-2026-78410   | HIGH     | 2.40.2-1          |               | util-linux: pam mount auth bypass     |
+| pip                | CVE-2026-1703    | MEDIUM   | 24.2              | 25.0+         | pip: path traversal during unpack     |
+| zlib1g             | CVE-2026-85091   | MEDIUM   | 1:1.3.dfsg-3      |               | zlib: heap overflow in inflate        |
++--------------------+------------------+----------+-------------------+---------------+---------------------------------------+

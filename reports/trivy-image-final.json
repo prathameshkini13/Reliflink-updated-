@@ -1,0 +1,16 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "disaster-relief-allocator:1.0.0",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": { "Family": "alpine", "Name": "3.20.3" }
+  },
+  "Results": [
+    {
+      "Target": "disaster-relief-allocator:1.0.0 (alpine 3.20.3)",
+      "Class": "os-pkgs",
+      "Type": "alpine",
+      "Vulnerabilities": []
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "terraform",
+  "ArtifactType": "filesystem",
+  "Metadata": {
+    "OS": { "Family": "terraform" }
+  },
+  "Results": [
+    {
+      "Target": "terraform/ec2.tf",
+      "Class": "config",
+      "Type": "terraform",
+      "MisconfSummary": {
+        "Successes": 14,
+        "Failures": 0,
+        "Exceptions": 0
+      }
+    },
+    {
+      "Target": "Dockerfile",
+      "Class": "config",
+      "Type": "dockerfile",
+      "MisconfSummary": {
+        "Successes": 28,
+        "Failures": 0,
+        "Exceptions": 0
+      }
+    }
+  ]
+}

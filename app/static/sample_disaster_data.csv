@@ -1,0 +1,9 @@
+zone_id,disaster_type,affected_population,vulnerability_index,infrastructure_damage_pct,urgency_window_hours,distance_km
+Zone-A Coastal Delta,Flash Flood,4200,0.85,75.0,12.0,35.5
+Zone-B Mountain Foothills,Landslide,1150,0.60,85.0,8.0,62.0
+Zone-C Urban Industrial,Earthquake,8500,0.70,60.0,24.0,18.0
+Zone-D Island Outpost,Cyclone,2900,0.92,90.0,6.0,110.0
+Zone-E Suburb Sector 4,Urban Fire,1650,0.45,40.0,16.0,22.0
+Zone-F Lowland Farmland,Flash Flood,3100,0.55,50.0,36.0,48.0
+Zone-G Seismic Fault Line,Earthquake,6400,0.78,80.0,14.0,55.0
+Zone-H Estuary Enclave,Tsunami,3800,0.88,95.0,5.0,72.0

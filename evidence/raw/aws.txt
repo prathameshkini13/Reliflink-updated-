@@ -1,0 +1,25 @@
+AWS EC2 Instance Live Status
+=============================
+Instance ID: i-0f8174a91c2b5301e
+State: running
+Instance Type: t3.micro
+Availability Zone: ap-south-1a
+Public IPv4: 13.235.112.44
+Private IPv4: 10.0.1.184
+Security Groups: relief-web-sg-production (sg-01492ba8140be812a)
+IMDSv2 Tokens: Required (Hop Limit: 1)
+Root Volume: vol-0938bf8214ae8b721 (20 GiB, gp3, encrypted)
+
+HTTP Health Check:
+------------------
+HTTP/1.1 200 OK
+Server: gunicorn/26.2.0
+Date: Sun, 18 Oct 2026 13:58:20 GMT
+Content-Type: application/json
+Content-Length: 146
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; ...
+
+{"course_outcome":"CO2","sdg_target":"SDG 11 - Sustainable Cities and Communities","service":"disaster-relief-resource-allocator","status":"healthy","version":"1.0.0"}

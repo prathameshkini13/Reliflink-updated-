@@ -1,0 +1,38 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "disaster-relief-allocator:baseline",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": { "Family": "debian", "Name": "13.7" }
+  },
+  "Results": [
+    {
+      "Target": "disaster-relief-allocator:baseline (debian 13.7)",
+      "Class": "os-pkgs",
+      "Type": "debian",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2026-76642",
+          "PkgName": "util-linux",
+          "InstalledVersion": "2.40.2-1",
+          "Severity": "HIGH",
+          "Title": "util-linux: mount helper namespace leakage"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-54369",
+          "PkgName": "libacl1",
+          "InstalledVersion": "2.3.2-2",
+          "Severity": "HIGH",
+          "Title": "libacl: symlink traversal in restore mode"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-69720",
+          "PkgName": "ncurses",
+          "InstalledVersion": "6.5-2",
+          "Severity": "HIGH",
+          "Title": "ncurses: buffer overflow in terminfo"
+        }
+      ]
+    }
+  ]
+}

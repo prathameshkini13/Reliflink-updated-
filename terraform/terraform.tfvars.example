@@ -1,0 +1,4 @@
+aws_region     = "ap-south-1"
+environment    = "production"
+instance_type  = "t3.micro"
+container_port = 8000

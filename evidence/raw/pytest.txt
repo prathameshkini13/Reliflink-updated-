@@ -1,0 +1,62 @@
+============================= test session starts =============================
+platform linux -- Python 3.12.7, pytest-8.3.4, pluggy-1.5.0
+rootdir: /workspace
+plugins: cov-6.0.0
+collected 45 items
+
+tests/test_app.py::test_index_route PASSED                               [  2%]
+tests/test_app.py::test_security_headers PASSED                          [  4%]
+tests/test_app.py::test_health_route PASSED                              [  6%]
+tests/test_app.py::test_warehouse_route PASSED                           [  8%]
+tests/test_app.py::test_sample_route PASSED                              [ 11%]
+tests/test_app.py::test_simulate_route PASSED                            [ 13%]
+tests/test_app.py::test_allocate_single_success PASSED                   [ 15%]
+tests/test_app.py::test_allocate_single_not_json PASSED                  [ 17%]
+tests/test_app.py::test_allocate_single_invalid_data_422 PASSED          [ 20%]
+tests/test_app.py::test_allocate_batch_json_array PASSED                 [ 22%]
+tests/test_app.py::test_allocate_batch_json_not_array PASSED             [ 24%]
+tests/test_app.py::test_allocate_batch_csv_upload PASSED                 [ 26%]
+tests/test_app.py::test_allocate_batch_csv_raw_data PASSED               [ 28%]
+tests/test_app.py::test_allocate_batch_empty_filename PASSED             [ 31%]
+tests/test_app.py::test_allocate_batch_malformed_csv PASSED              [ 33%]
+tests/test_app.py::test_allocate_batch_missing_payload PASSED            [ 35%]
+tests/test_app.py::test_csrf_protection_rejection PASSED                 [ 37%]
+tests/test_app.py::test_404_not_found PASSED                             [ 40%]
+tests/test_core.py::test_validate_disaster_report_success PASSED         [ 42%]
+tests/test_core.py::test_validate_disaster_report_not_dict PASSED        [ 44%]
+tests/test_core.py::test_validate_disaster_report_empty_zone PASSED      [ 46%]
+tests/test_core.py::test_validate_disaster_report_invalid_disaster_type PASSED [ 48%]
+tests/test_core.py::test_validate_disaster_report_population_bounds PASSED [ 51%]
+tests/test_core.py::test_validate_disaster_report_vulnerability_bounds PASSED [ 53%]
+tests/test_core.py::test_validate_disaster_report_infrastructure_bounds PASSED [ 55%]
+tests/test_core.py::test_validate_disaster_report_urgency_bounds PASSED  [ 57%]
+tests/test_core.py::test_validate_disaster_report_distance_bounds PASSED [ 60%]
+tests/test_core.py::test_calculate_triage_score_critical PASSED          [ 62%]
+tests/test_core.py::test_calculate_triage_score_priority_tiers PASSED    [ 64%]
+tests/test_core.py::test_allocate_resources_standard PASSED              [ 66%]
+tests/test_core.py::test_allocate_resources_depleted_stock PASSED        [ 68%]
+tests/test_core.py::test_evaluate_sustainability_sdg11 PASSED            [ 71%]
+tests/test_core.py::test_generate_dispatch_alert_critical PASSED         [ 73%]
+tests/test_core.py::test_generate_dispatch_alert_optimal PASSED          [ 75%]
+tests/test_core.py::test_generate_dispatch_alert_moderate_shortage PASSED [ 77%]
+tests/test_core.py::test_process_disaster_report_success PASSED          [ 80%]
+tests/test_core.py::test_process_disaster_report_rejected PASSED         [ 82%]
+tests/test_core.py::test_process_disaster_batch PASSED                   [ 84%]
+tests/test_core.py::test_parse_csv_success PASSED                        [ 86%]
+tests/test_core.py::test_parse_csv_empty PASSED                          [ 88%]
+tests/test_core.py::test_parse_csv_missing_columns PASSED                [ 91%]
+tests/test_core.py::test_parse_csv_malformed_number PASSED               [ 93%]
+tests/test_core.py::test_parse_csv_row_limit PASSED                      [ 95%]
+tests/test_core.py::test_parse_csv_no_data_rows PASSED                   [ 97%]
+tests/test_core.py::test_simulate_disaster_session PASSED                [100%]
+
+---------- coverage: platform linux, python 3.12.7 ----------
+Name          Stmts   Miss Branch BrPart  Cover   Missing
+---------------------------------------------------------
+app/app.py       82      4     14      0    96%   62, 80, 171-172
+app/core.py     201      4     68      5    97%   166, 170, 390->393, 447, 461
+---------------------------------------------------------
+TOTAL           283      8     82      5    96%
+
+Coverage XML written to file reports/coverage.xml
+============================== 45 passed in 1.26s ==============================

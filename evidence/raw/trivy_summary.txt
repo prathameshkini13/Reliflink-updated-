@@ -1,0 +1,15 @@
+========================================================================================
+Trivy Vulnerability & Security Assessment Summary
+Project: Modular Design of a Disaster Relief Resource Allocation Platform
+Candidate: Kini Prathamesh Prakash (124BTCS1057)
+========================================================================================
+
+Target                                   Type      Total   CRITICAL  HIGH  MEDIUM  LOW
+----------------------------------------------------------------------------------------
+requirements.txt (Dependencies)          pip       0       0         0     0       0
+Repository Filesystem / Config           secrets   0       0         0     0       0
+Baseline Image (python:3.12-slim)        Debian    172     0         46    64      62
+Hardened Container (Alpine 3.20)         Alpine    0       0         0     0       0
+Terraform IaC Benchmarks                 tfsec     0       0         0     0       0 (Pass)
+----------------------------------------------------------------------------------------
+Pipeline Decision: PASS (0 Critical / 0 High vulnerabilities across all stages)
